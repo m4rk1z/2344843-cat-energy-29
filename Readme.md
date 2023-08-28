@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [m4rk1z](https://up.htmlacademy.ru/adaptive/29/user/2344843).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Гущина](https://htmlacademy.ru/profile/vanastasiya).
 
 ---
 
