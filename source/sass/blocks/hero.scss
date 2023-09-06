@@ -1,0 +1,39 @@
+.hero__container {
+  min-height: 302px;
+  background-image: url("/img/cat-background.png");
+}
+
+.hero__title {
+  text-align: center;
+  padding: 27px 0 25px 0;
+  margin: 0;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.hero__text {
+  margin: 0;
+  padding-right: 3px;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero__img-container {
+  position: relative;
+  height: 138px;
+}
+
+.hero__image {
+  position: absolute;
+  bottom: 2px;
+  left: 19px;
+}
+

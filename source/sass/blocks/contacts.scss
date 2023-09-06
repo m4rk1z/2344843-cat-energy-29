@@ -1,0 +1,31 @@
+.contacts {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 26px 20px 0;
+}
+
+.contacts__title {
+  margin: 0;
+  max-width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.contacts__adress {
+  max-width: 140px;
+  line-height: 20px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #444444;
+}
+
+.contacts__map {
+  padding-top: 26px;
+}
+
+.contacts__map-img {
+  display: block;
+}
