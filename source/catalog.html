@@ -45,254 +45,313 @@
         </ul>
       </nav>
     </header>
-    <main class="page__main main-container">
-      <h1>Каталог продукции</h1>
-      <section class="catalog">
-        <ul class="catalog__list">
-          <li class="catalog__item cart">
-            <h2 class="cart__title">Cat Energy PRO 500 г</h2>
-            <table class="cart__properties properties">
-              <tbody>
-                <tr>
-                  <td class="properties__cell">Масса</td>
-                  <td class="properties__cell">500 г</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Вкус</td>
-                  <td class="properties__cell">Курица</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Цена</td>
-                  <td class="properties__cell">700 ₽</td>
-                </tr>
-              </tbody>
-            </table>
-            <a class="cart__link" href="#"
-              ><img
-                src="/source/img/cat-energy-small.png"
-                alt="Маленькая упаковка корма Кэт энерджи с курицей"
-                width="68"
-                height="86"
-              />
-            </a>
-            <button class="cart__button">заказать</button>
+    <main class="page__main main-catalog">
+      <h1 class="main-catalog__title">Каталог продукции</h1>
+      <section class="main-catalog">
+        <h2 class="visually-hidden">Основные товары</h2>
+        <ul class="main-catalog__list product-cards">
+          <li class="product-cards__item product-card">
+            <div class="product-card__content-wrapper">
+              <div class="product-card__text-wrapper">
+                <h3 class="product-card__caption">Cat Energy PRO 500 г</h3>
+                <table class="product-card__description">
+                  <tbody>
+                    <tr>
+                      <td>Масса</td>
+                      <td>500 г</td>
+                    </tr>
+                    <tr>
+                      <td>Вкус</td>
+                      <td>Курица</td>
+                    </tr>
+                    <tr>
+                      <td>Цена</td>
+                      <td>700 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product-card__image-wrapper">
+                <img
+                class="product-card__image"
+                  src="./img/cat-energy-small.png"
+                  alt="Маленькая упаковка корма Кэт энерджи с курицей"
+                  width="68"
+                  height="86"
+                />
+              </div>
+            </div>
+            <a class="product-card__button button button--green" href="#"
+              >заказать</a
+            >
           </li>
-          <li class="catalog__item cart">
-            <h2 class="cart__title">Cat Energy PRO 1000 г</h2>
-            <table class="cart__properties properties">
-              <tbody>
-                <tr>
-                  <td class="properties__cell">Масса</td>
-                  <td class="properties__cell">1000 г</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Вкус</td>
-                  <td class="properties__cell">Курица</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Цена</td>
-                  <td class="properties__cell">1000 ₽</td>
-                </tr>
-              </tbody>
-            </table>
-            <a class="cart__link" href="#"
-              ><img
-                src="/source/img/cat-energy-pro-big.jpg"
-                alt="Большая упаковка корма Кэт энерджи с курицей"
-                width="84"
-                height="100"
-              />
-            </a>
-            <button class="cart__button">заказать</button>
+          <li class="product-cards__item product-card">
+            <div class="product-card__content-wrapper">
+              <div class="product-card__text-wrapper">
+                <h3 class="product-card__caption">Cat Energy PRO 1000 г</h3>
+                <table class="product-card__description">
+                  <tbody>
+                    <tr>
+                      <td>Масса</td>
+                      <td>1000 г</td>
+                    </tr>
+                    <tr>
+                      <td>Вкус</td>
+                      <td>Курица</td>
+                    </tr>
+                    <tr>
+                      <td>Цена</td>
+                      <td>1000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product-card__image-wrapper">
+                <img
+                class="product-card__image"
+                  src="./img/cat-energy-pro-big.jpg"
+                  alt="Большая упаковка корма Кэт энерджи с курицей"
+                  width="84"
+                  height="100"
+                />
+              </div>
+            </div>
+            <a class="product-card__button button button--green" href="#"
+              >заказать</a
+            >
           </li>
-          <li class="catalog__item cart">
-            <h2 class="cart__title">Cat Energy PRO 500 г</h2>
-            <table class="cart__properties properties">
-              <tbody>
-                <tr>
-                  <td class="properties__cell">Масса</td>
-                  <td class="properties__cell">500 г</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Вкус</td>
-                  <td class="properties__cell">Рыба</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Цена</td>
-                  <td class="properties__cell">700 ₽</td>
-                </tr>
-              </tbody>
-            </table>
-            <a class="cart__link" href="#"
-              ><img
-                src="/source/img/cat-energy-pro-fish-small.png"
-                alt="Маленькая упаковка корма Кэт энерджи с рыбой"
-                width="68"
-                height="78"
-              />
-            </a>
-            <button class="cart__button">заказать</button>
+          <li class="product-cards__item product-card">
+            <div class="product-card__content-wrapper">
+              <div class="product-card__text-wrapper">
+                <h3 class="product-card__caption">Cat Energy PRO 500 г</h3>
+                <table class="product-card__description">
+                  <tbody>
+                    <tr>
+                      <td>Масса</td>
+                      <td>500 г</td>
+                    </tr>
+                    <tr>
+                      <td>Вкус</td>
+                      <td>Рыба</td>
+                    </tr>
+                    <tr>
+                      <td>Цена</td>
+                      <td>700 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product-card__image-wrapper">
+                <img
+                class="product-card__image"
+                  src="./img/cat-energy-pro-fish-small.png"
+                  alt="Маленькая упаковка корма Кэт энерджи с рыбой"
+                  width="68"
+                  height="78"
+                />
+              </div>
+            </div>
+            <a class="product-card__button button button--green" href="#"
+              >заказать</a
+            >
           </li>
-          <li class="catalog__item cart">
-            <h3 class="cart__title">Cat Energy PRO 1000 г</h3>
-            <table class="cart__properties properties">
-              <tbody>
-                <tr>
-                  <td class="properties__cell">Масса</td>
-                  <td class="properties__cell">1000 г</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Вкус</td>
-                  <td class="properties__cell">Рыба</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Цена</td>
-                  <td class="properties__cell">1000 ₽</td>
-                </tr>
-              </tbody>
-            </table>
-            <a class="cart__link" href="#"
-              ><img
-                src="/source/img/cat-energy-pro-fish-big.png"
-                alt="Большая упаковка корма Кэт энерджи с рыбой"
-                width="84"
-                height="100"
-              />
-            </a>
-            <button class="cart__button">заказать</button>
+          <li class="product-cards__item product-card">
+            <div class="product-card__content-wrapper">
+              <div class="product-card__text-wrapper">
+                <h3 class="product-card__caption">Cat Energy PRO 1000 г</h3>
+                <table class="product-card__description">
+                  <tbody>
+                    <tr>
+                      <td>Масса</td>
+                      <td>1000 г</td>
+                    </tr>
+                    <tr>
+                      <td>Вкус</td>
+                      <td>Рыба</td>
+                    </tr>
+                    <tr>
+                      <td>Цена</td>
+                      <td>1000 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product-card__image-wrapper">
+                <img
+                class="product-card__image"
+                  src="./img/cat-energy-pro-fish-big.png"
+                  alt="Большая упаковка корма Кэт энерджи с рыбой"
+                  width="84"
+                  height="100"
+                />
+              </div>
+            </div>
+            <a class="product-card__button button button--green" href="#"
+              >заказать</a
+            >
           </li>
-          <li class="catalog__item cart">
-            <h3 class="cart__title">Cat Energy PRO 1000 г</h3>
-            <table class="cart__properties properties">
-              <tbody>
-                <tr>
-                  <td class="properties__cell">Масса</td>
-                  <td class="properties__cell">500 г</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Вкус</td>
-                  <td class="properties__cell">Гречка</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Цена</td>
-                  <td class="properties__cell">400 ₽</td>
-                </tr>
-              </tbody>
-            </table>
-            <a class="cart__link" href="#"
-              ><img
-                src="/source/img/cat-energy-pro-buckwheat-small.png"
-                alt="Маленькая упаковка корма Кэт энерджи с гречкой"
-                width="68"
-                height="78"
-              />
-            </a>
-            <button class="cart__button">заказать</button>
+          <li class="product-cards__item product-card">
+            <div class="product-card__content-wrapper">
+              <div class="product-card__text-wrapper">
+                <h3 class="product-card__caption">Cat Energy SLIM 500 г</h3>
+                <table class="product-card__description">
+                  <tbody>
+                    <tr>
+                      <td>Масса</td>
+                      <td>500 г</td>
+                    </tr>
+                    <tr>
+                      <td>Вкус</td>
+                      <td>Гречка</td>
+                    </tr>
+                    <tr>
+                      <td>Цена</td>
+                      <td>400 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product-card__image-wrapper">
+                <img
+                class="product-card__image"
+                  src="./img/cat-energy-pro-buckwheat-small.png"
+                  alt="Маленькая упаковка корма Кэт энерджи с гречкой"
+                  width="68"
+                  height="78"
+                />
+              </div>
+            </div>
+            <a class="product-card__button button button--green" href="#"
+              >заказать</a
+            >
           </li>
-          <li class="catalog__item cart">
-            <h3 class="cart__title">Cat Energy PRO 1000 г</h3>
-            <table class="cart__properties properties">
-              <tbody>
-                <tr>
-                  <td class="properties__cell">Масса</td>
-                  <td class="properties__cell">1000 г</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Вкус</td>
-                  <td class="properties__cell">Гречка</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Цена</td>
-                  <td class="properties__cell">700 ₽</td>
-                </tr>
-              </tbody>
-            </table>
-            <a class="cart__link" href="#"
-              ><img
-                src="/source/img/cat-energy-pro-buckwheat-big.png"
-                alt="Большая упаковка корма Кэт энерджи с гречкой"
-                width="84"
-                height="100"
-              />
-            </a>
-            <button class="cart__button">заказать</button>
+          <li class="product-cards__item product-card">
+            <div class="product-card__content-wrapper">
+              <div class="product-card__text-wrapper">
+                <h3 class="product-card__caption">Cat Energy SLIM 1000 г</h3>
+                <table class="product-card__description">
+                  <tbody>
+                    <tr>
+                      <td>Масса</td>
+                      <td>1000 г</td>
+                    </tr>
+                    <tr>
+                      <td>Вкус</td>
+                      <td>Гречка</td>
+                    </tr>
+                    <tr>
+                      <td>Цена</td>
+                      <td>700 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product-card__image-wrapper">
+                <img
+                class="product-card__image"
+                  src="./img/cat-energy-pro-buckwheat-big.png"
+                  alt="Большая упаковка корма Кэт энерджи с гречкой"
+                  width="84"
+                  height="100"
+                />
+              </div>
+            </div>
+            <a class="product-card__button button button--green" href="#"
+              >заказать</a
+            >
           </li>
-          <li class="catalog__item cart">
-            <h3 class="cart__title">Cat Energy PRO 1000 г</h3>
-            <table class="cart__properties properties">
-              <tbody>
-                <tr>
-                  <td class="properties__cell">Масса</td>
-                  <td class="properties__cell">500 г</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Вкус</td>
-                  <td class="properties__cell">Рис</td>
-                </tr>
-                <tr>
-                  <td class="properties__cell">Цена</td>
-                  <td class="properties__cell">500 ₽</td>
-                </tr>
-              </tbody>
-            </table>
-            <a class="cart__link" href="#"
-              ><img
-                src="/source/img/cat-energy-pro-rice-small.png"
-                alt="Большая упаковка корма Кэт энерджи с рисом"
-                width="68"
-                height="78"
-              />
-            </a>
-            <button class="cart__button">заказать</button>
+          <li class="product-cards__item product-card">
+            <div class="product-card__content-wrapper">
+              <div class="product-card__text-wrapper">
+                <h3 class="product-card__caption">Cat Energy SLIM 500 г</h3>
+                <table class="product-card__description">
+                  <tbody>
+                    <tr>
+                      <td>Масса</td>
+                      <td>500 г</td>
+                    </tr>
+                    <tr>
+                      <td>Вкус</td>
+                      <td>Рис</td>
+                    </tr>
+                    <tr>
+                      <td>Цена</td>
+                      <td>500 ₽</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="product-card__image-wrapper">
+                <img
+                class="product-card__image"
+                  src="./img/cat-energy-pro-rice-small.png"
+                  alt="Большая упаковка корма Кэт энерджи с рисом"
+                  width="68"
+                  height="78"
+                />
+              </div>
+            </div>
+            <a class="product-card__button button button--green" href="#"
+              >заказать</a
+            >
+          </li>
+          <li class="product-cards__item product-more">
+            <div class="product-more__container">
+              <h3 class="product-more__caption">Показать еще 100500 товаров</h3>
+              <p class="product-more__description">
+                На самом деле вкусов гораздо больше!
+              </p>
+            </div>
+            <button
+              class="product-more__button button button--gray"
+              type="button"
+            >
+              показать все
+            </button>
           </li>
         </ul>
       </section>
-      <section class="catalog-more">
-        <h2 class="catalog-more__title">Показать еще 100500 товаров</h2>
-        <p>На самом деле вкусов гораздо больше!</p>
-        <button class="catalog-more__button">показать все</button>
-      </section>
       <section class="additional-product">
-        <h2>Дополнительные товары</h2>
+        <h2 class="additional-product__title">Дополнительные товары</h2>
         <ul class="additional-product__list">
           <li class="additional-product__item product">
-            <h3>Сахарозаменитель</h3>
-            <ul>
-              <li>1 упаковка (100 г)</li>
-              <li>200 ₽</li>
-            </ul>
-            <button class="product_button">заказать</button>
+            <h3 class="product__title">Сахарозаменитель</h3>
+            <dl class="product__description">
+              <dt>1 упаковка (100 г)</dt>
+              <dd>200 ₽</dd>
+            </dl>
+            <button class="product_button button button--green">заказать</button>
           </li>
           <li class="additional-product__item product">
-            <h3>питьевая вода</h3>
-            <ul>
-              <li>5 литров</li>
-              <li>50 ₽</li>
-            </ul>
-            <button class="product_button">заказать</button>
+            <h3 class="product__title">питьевая вода</h3>
+            <dl class="product__description">
+              <dt>5 литров</dt>
+              <dd>50 ₽</dd>
+            </dl>
+            <button class="product_button button button--green">заказать</button>
           </li>
           <li class="additional-product__item product">
-            <h3>молоко</h3>
-            <ul>
-              <li>1 литр</li>
-              <li>100 ₽</li>
-            </ul>
-            <button class="product_button">заказать</button>
+            <h3 class="product__title">молоко</h3>
+            <dl class="product__description">
+              <dt>1 литр</dt>
+              <dd>100 ₽</dd>
+            </dl>
+            <button class="product_button button button--green">заказать</button>
           </li>
           <li class="additional-product__item product">
-            <h3>витамины</h3>
-            <ul>
-              <li>1 упаковка (30 г)</li>
-              <li>300 ₽</li>
-            </ul>
-            <button class="product_button">заказать</button>
+            <h3 class="product__title">витамины</h3>
+            <dl class="product__description">
+              <dt>1 упаковка (30 г)</dt>
+              <dd>300 ₽</dd>
+            </dl>
+            <button class="product_button button button--green">заказать</button>
           </li>
         </ul>
         <div class="additional-product__prize-wrapepr">
-          <p>Закажите все и получите чехол для кота в подарок!</p>
+          <p class="additional-product__prize-text">Закажите все<br> и получите чехол для кота в подарок!</p>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts contacts--grey">
         <h2 class="contacts__title">
           Приглашаем <br />
           к сотрудничеству дилеров!

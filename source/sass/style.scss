@@ -1,21 +1,38 @@
 // Global
-@use "./blocks/visually-hidden.scss";
-@use "./blocks/page.scss";
-@use "./blocks/fonts.scss";
-@use "./blocks/button.scss";
+@use "./blocks/index/visually-hidden.scss";
+@use "./blocks/index/page.scss";
+@use "./blocks/index/fonts.scss";
+@use "./blocks/index/button.scss";
 // Header
-@use "./blocks/main-header.scss";
-@use "./blocks/main-logo.scss";
-@use "./blocks/main-nav.scss";
-// Hero
-@use "./blocks/hero.scss";
-// Advantages
-@use "./blocks/advantages.scss";
-// Special
-@use "./blocks/special.scss";
-// Example
-@use "./blocks/example.scss";
+@use "./blocks/index/main-header.scss";
+@use "./blocks/index/main-logo.scss";
+@use "./blocks/index/main-nav.scss";
 // Contacts
-@use "./blocks/contacts.scss";
+@use "./blocks/index/contacts.scss";
 // Footer
-@use "./blocks/page-footer.scss";
+@use "./blocks/index/page-footer.scss";
+
+// INDEX
+
+// Hero
+@use "./blocks/index/hero.scss";
+// Advantages
+@use "./blocks/index/advantages.scss";
+// Special
+@use "./blocks/index/special.scss";
+// Example
+@use "./blocks/index/example.scss";
+
+// CATALOG
+
+// Title
+@use "./blocks/catalog/main-catalog.scss";
+// Catalog Page
+@use "./blocks/catalog/catalog.scss";
+// Card
+@use "./blocks/catalog/product-card.scss";
+@use "./blocks/catalog/product-cards.scss";
+@use "./blocks/catalog/product-more.scss";
+// Additional
+@use "./blocks/catalog/additional-product.scss";
+@use "./blocks/catalog/product.scss";
