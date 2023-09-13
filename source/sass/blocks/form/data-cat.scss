@@ -1,0 +1,16 @@
+.data-cat {
+  padding: 0;
+  border: none;
+}
+
+.data-cat__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.data-cat__item {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}

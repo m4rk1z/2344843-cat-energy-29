@@ -36,3 +36,17 @@
 // Additional
 @use "./blocks/catalog/additional-product.scss";
 @use "./blocks/catalog/product.scss";
+
+// FORM
+
+// Main Form
+@use "./blocks/form/main-form.scss";
+@use "./blocks/form/data-cat.scss";
+@use "./blocks/form/field.scss";
+@use "./blocks/form/form-selection.scss";
+@use "./blocks/form/loss-plan.scss";
+@use "./blocks/form/multiple-field.scss";
+@use "./blocks/form/data-owner.scss";
+@use "./blocks/form/text-container.scss";
+@use "./blocks/form/user-comment.scss";
+@use "./blocks/form/optional-selection.scss";
