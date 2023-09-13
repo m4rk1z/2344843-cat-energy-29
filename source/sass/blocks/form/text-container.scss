@@ -1,0 +1,29 @@
+.text-container {
+  position: relative;
+  display: flex;
+
+  &::before {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    height: 2px;
+    content: "";
+    background-color: #68b738;
+  }
+}
+
+.text-container__title {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 58%;
+  margin: 0;
+  margin-right: auto;
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: normal;
+  background-color: #ffffff;
+}

@@ -1,0 +1,21 @@
+.optional-select {
+  padding: 0;
+  padding-bottom: 35px;
+  border: 0;
+}
+
+.optional-select__container {
+  margin-bottom: 34px;
+}
+
+.optional-select__list {
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+}
+
+.optional-select__item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

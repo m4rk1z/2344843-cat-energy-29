@@ -1,0 +1,32 @@
+.main-header__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 13px 20px 14px;
+}
+
+.main-header__logo {
+  margin-right: auto;
+}
+
+.main-header__toggle {
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+
+  &--active {
+    width: 20px;
+    height: 20px;
+    background: url("/img/toggle-active.svg");
+  }
+
+  &--inactive {
+    width: 24px;
+    height: 24px;
+    background-image: url("/img/toggle-inactive.svg");
+  }
+}
+
+.main-header__nav {
+  min-width: 100%;
+}

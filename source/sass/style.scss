@@ -1,1 +1,52 @@
-// Начните писать стили здесь
+// Global
+@use "./blocks/index/visually-hidden.scss";
+@use "./blocks/index/page.scss";
+@use "./blocks/index/fonts.scss";
+@use "./blocks/index/button.scss";
+// Header
+@use "./blocks/index/main-header.scss";
+@use "./blocks/index/main-logo.scss";
+@use "./blocks/index/main-nav.scss";
+// Contacts
+@use "./blocks/index/contacts.scss";
+// Footer
+@use "./blocks/index/page-footer.scss";
+
+// INDEX
+
+// Hero
+@use "./blocks/index/hero.scss";
+// Advantages
+@use "./blocks/index/advantages.scss";
+// Special
+@use "./blocks/index/special.scss";
+// Example
+@use "./blocks/index/example.scss";
+
+// CATALOG
+
+// Title
+@use "./blocks/catalog/main-catalog.scss";
+// Catalog Page
+@use "./blocks/catalog/catalog.scss";
+// Card
+@use "./blocks/catalog/product-card.scss";
+@use "./blocks/catalog/product-cards.scss";
+@use "./blocks/catalog/product-more.scss";
+// Additional
+@use "./blocks/catalog/additional-product.scss";
+@use "./blocks/catalog/product.scss";
+
+// FORM
+
+// Main Form
+@use "./blocks/form/main-form.scss";
+@use "./blocks/form/data-cat.scss";
+@use "./blocks/form/field.scss";
+@use "./blocks/form/form-selection.scss";
+@use "./blocks/form/loss-plan.scss";
+@use "./blocks/form/multiple-field.scss";
+@use "./blocks/form/data-owner.scss";
+@use "./blocks/form/text-container.scss";
+@use "./blocks/form/user-comment.scss";
+@use "./blocks/form/optional-selection.scss";

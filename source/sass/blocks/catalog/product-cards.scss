@@ -1,0 +1,13 @@
+.product-cards {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.product-cards__item {
+  &:not(:last-child) {
+    border-bottom: 1px solid #ebebeb;
+  }
+}
