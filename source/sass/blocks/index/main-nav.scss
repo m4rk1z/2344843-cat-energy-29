@@ -1,5 +1,9 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: 768px) {
+    position: static;
+  }
 }
 
 .main-nav__list {
@@ -20,6 +24,15 @@
   &--closed {
     display: none;
   }
+
+  @media (min-width: 768px) {
+    position: static;
+    display: flex;
+    gap: 33px;
+    width: unset;
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .main-nav__item {
@@ -27,6 +40,11 @@
   padding: 22px 70px 23px;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .main-nav__link {
@@ -36,4 +54,9 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

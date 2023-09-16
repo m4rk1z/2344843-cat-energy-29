@@ -15,6 +15,14 @@
   border: 0;
   cursor: pointer;
 
+  @media (min-width: 768px) {
+    margin: 50px 440px 0 120px;
+    height: 54px;
+    min-width: 244px;
+    line-height: 26px;
+    font-size: 20px;
+  }
+
   &--green {
     color: #ffffff;
     background-color: #68b738;
