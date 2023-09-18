@@ -1,6 +1,18 @@
-
 .product-card {
   padding: 20px 20px 24px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    background-color: #f2f2f2;
+
+    &::before {
+      display: block;
+      width: 100%;
+      height: 81px;
+      content: "";
+      background-color: #ffffff;
+    }
+  }
 }
 
 .product-card__content-wrapper {
@@ -8,10 +20,22 @@
   flex-direction: row-reverse;
   justify-content: center;
   margin-bottom: 17px;
+
+  @media (min-width: 768px) {
+    flex-direction: column-reverse;
+    justify-content: unset;
+    align-items: center;
+    padding: 0 37px 0 37px;
+    margin: 0;
+  }
 }
 
 .product-card__text-wrapper {
   width: 50%;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
 }
 
 .product-card__caption {
@@ -23,6 +47,17 @@
   line-height: 20px;
   font-weight: normal;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding-top: 54px;
+    padding-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 135px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .product-card__description {
@@ -30,14 +65,47 @@
   font-family: "Lato", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
   border-spacing: 0;
 
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.product-card__description tr {
   & td {
     padding: 0;
 
     &:last-child {
       text-align: right;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & td {
+      padding-top: 7px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  &:first-child {
+    & td {
+      padding-top: 0;
+    }
+  }
+
+  &:last-child {
+    & td {
+      padding-bottom: 0;
+      border-bottom: none;
+
+      @media (min-width: 768px) {
+        padding-top: 7px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #cdcdcd;
+      }
     }
   }
 }
@@ -62,4 +130,14 @@
   width: 100%;
   padding-top: 10px;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    margin: 32px 37px 41px 37px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
