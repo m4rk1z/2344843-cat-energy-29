@@ -7,6 +7,10 @@
     padding-top: 0;
     padding-bottom: 65px;
   }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 69px;
+  }
 }
 
 .data-owner__container {
@@ -22,6 +26,12 @@
     padding: 0;
     margin: 0 70px;
   }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    gap: 80px;
+    margin: 0 110px;
+  }
 }
 
 .data-owner__item {
@@ -31,5 +41,15 @@
     @media (min-width: 768px) {
       margin-bottom: 20px;
     }
+
+    @media (min-width: 1440px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 569px;
+    flex-grow: 1;
+    box-sizing: border-box;
   }
 }

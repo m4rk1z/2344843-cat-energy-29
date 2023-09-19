@@ -6,6 +6,11 @@
     padding: 64px 70px 0;
     margin-bottom: 66px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 44px 110px 67px;
+    margin-bottom: 0;
+  }
 }
 
 .main-form__title {

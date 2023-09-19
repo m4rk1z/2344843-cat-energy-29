@@ -2,10 +2,18 @@
   padding: 0;
   padding-bottom: 23px;
   border: none;
+
+  @media (min-width: 1440px) {
+    padding-bottom: 72px;
+  }
 }
 
 .user-comment__container {
   margin-bottom: 38px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 77px;
+  }
 }
 
 .user-comment__wrapper {
@@ -15,6 +23,10 @@
   @media (min-width: 768px) {
     height: 175px;
     padding: 51px 70px 40px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 110px;
   }
 }
 
