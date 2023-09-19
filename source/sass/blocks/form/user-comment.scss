@@ -11,6 +11,11 @@
 .user-comment__wrapper {
   height: 150px;
   padding: 0 20px;
+
+  @media (min-width: 768px) {
+    height: 175px;
+    padding: 51px 70px 40px;
+  }
 }
 
 .user-comment__textarea {
@@ -32,5 +37,11 @@
   &:focus {
     outline: 2px solid #444444;
     outline-offset: -2px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }

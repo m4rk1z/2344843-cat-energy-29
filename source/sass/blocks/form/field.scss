@@ -10,6 +10,12 @@
   text-transform: uppercase;
   color: #444444;
   text-wrap: nowrap;
+
+  @media (min-width: 768px) {
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .field__input {
@@ -23,6 +29,7 @@
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
 
+
   &:hover {
     border: 1px solid #cdcdcd;
   }
@@ -35,6 +42,13 @@
   &:focus:invalid {
     outline: 2px solid #ff8282;
     outline-offset: -2px;
+  }
+
+  @media (min-width: 768px) {
+    height: 52px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: normal;
   }
 }
 

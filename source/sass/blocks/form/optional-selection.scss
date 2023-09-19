@@ -2,6 +2,10 @@
   padding: 0;
   padding-bottom: 35px;
   border: 0;
+
+  @media (min-width: 768px) {
+    padding-bottom: 16px;
+  }
 }
 
 .optional-select__container {
@@ -12,6 +16,14 @@
   margin: 0;
   padding: 0 20px;
   list-style: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 221px);
+    row-gap: 21px;
+    column-gap: 123px;
+    padding: 23px 70px;
+  }
 }
 
 .optional-select__item {

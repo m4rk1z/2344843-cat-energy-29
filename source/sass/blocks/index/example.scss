@@ -1,6 +1,6 @@
 .example {
   padding: 25px 20px 40px 20px;
-  height: 593px;
+  min-height: 594px;
   background-color: #eaeaea;
 
   @media (min-width: 768px) {
@@ -35,7 +35,7 @@
   margin-bottom: 20px;
   font-family: "Lato", sans-serif;
 
-  &br {
+  & br {
     display: none;
   }
 
@@ -44,7 +44,7 @@
     font-size: 16px;
     line-height: 24px;
 
-    &br {
+    & br {
       display: initial;
     }
   }
@@ -131,7 +131,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  &br {
+  & br {
     display: none;
   }
 
@@ -145,7 +145,7 @@
     text-transform: uppercase;
     text-align: right;
 
-    &br {
+    & br {
       display: initial;
     }
   }

@@ -1,5 +1,5 @@
 .special {
-  padding: 0 20px 27px;
+  padding: 0 20px 53px;
 
   @media (min-width: 768px) {
     padding: 45px 105px 46px 30px;
@@ -9,7 +9,7 @@
 
 .special__title {
   margin: 0;
-  padding-bottom: 44px;
+  padding-bottom: 42px;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -25,6 +25,7 @@
 .special__list {
   list-style: none;
   margin: 0;
+  padding: 0;
 
   @media (min-width: 768px) {
     padding: 0;
@@ -36,7 +37,8 @@
 }
 
 .special__item {
-  padding-left: 40px;
+  position: relative;
+  padding-left: 80px;
   min-height: 44px;
   width: 200px;
   color: #444444;
@@ -46,6 +48,10 @@
   font-weight: 400;
   line-height: 18px;
 
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
   @media (min-width: 768px) {
     box-sizing: border-box;
     position: relative;
@@ -54,6 +60,10 @@
     align-items: flex-start;
     padding: 151px 0 0 0;
     min-height: 280px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
 
     @for $n from 1 to 5 {
       &:nth-child(#{$n})::after {
@@ -92,6 +102,8 @@
 }
 
 .special__item-text {
+  margin: 0;
+
   & br {
     display: none;
   }
@@ -101,7 +113,6 @@
     z-index: 1;
     font-size: 16px;
     line-height: 24px;
-    margin: 0;
 
     & br {
       display: initial;
@@ -109,15 +120,10 @@
   }
 }
 
-.special__item--leaf {
-  position: relative;
-  padding-bottom: 26px;
-}
-
 .special__item--leaf::before {
   position: absolute;
-  left: -40px;
-  top: -3px;
+  left: 0;
+  top: -2px;
   content: "";
   width: 60px;
   height: 60px;
@@ -134,15 +140,10 @@
   }
 }
 
-.special__item--cup {
-  position: relative;
-  padding-bottom: 26px;
-}
-
 .special__item--cup::before {
   position: absolute;
-  left: -40px;
-  top: -3px;
+  left: 0;
+  top: -2px;
   content: "";
   width: 60px;
   height: 60px;
@@ -159,15 +160,10 @@
   }
 }
 
-.special__item--eat {
-  position: relative;
-  padding-bottom: 26px;
-}
-
 .special__item--eat::before {
   position: absolute;
-  left: -40px;
-  top: -3px;
+  left: 0;
+  top: -2px;
   content: "";
   width: 60px;
   height: 60px;
@@ -184,15 +180,10 @@
   }
 }
 
-.special__item--alarm {
-  position: relative;
-  padding-bottom: 25px;
-}
-
 .special__item--alarm::before {
   position: absolute;
-  left: -40px;
-  top: -3px;
+  left: 0;
+  top: -2px;
   content: "";
   width: 60px;
   height: 60px;

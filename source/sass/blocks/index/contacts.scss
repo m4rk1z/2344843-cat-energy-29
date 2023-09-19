@@ -4,13 +4,13 @@
   flex-wrap: wrap;
   padding: 26px 20px;
 
-  &--grey {
+  &--gray {
     background-color: #f2f2f2;
   }
 
   @media (min-width: 768px) {
     justify-content: space-between;
-    padding: 61px 70px;
+    padding: 60px 70px;
   }
 }
 
@@ -36,7 +36,7 @@
   font-style: normal;
   color: #444444;
 
-  &.contacts__delimiter {
+  & .contacts__delimiter {
     display: none;
   }
 
@@ -45,23 +45,28 @@
     font-size: 16px;
     text-align: end;
 
-    &.contacts__delimiter {
+    & .contacts__delimiter {
       display: initial;
     }
   }
 }
 
 .contacts__map {
-  padding-top: 26px;
+  height: 362px;
 
   @media (min-width: 768px) {
-    padding: 0;
+    height: 400px;
   }
 }
 
 .contacts__map-img {
   display: block;
   min-width: 100%;
+  height: 362px;
   object-fit: cover;
   object-position: center;
+
+  @media (min-width: 768px) {
+    height: 400px;
+  }
 }

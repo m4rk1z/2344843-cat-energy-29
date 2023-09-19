@@ -12,5 +12,9 @@
 .data-cat__item {
   &:not(:last-child) {
     margin-bottom: 14px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
 }

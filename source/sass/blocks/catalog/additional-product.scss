@@ -1,6 +1,5 @@
 .additional-product {
   position: relative;
-  padding-left: 20px;
   padding-top: 25px;
   padding-bottom: 35px;
   margin: 0;
@@ -11,10 +10,11 @@
 }
 
 .additional-product__title {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
   margin: 0;
-  margin-bottom: 36px;
-  width: 226px;
-  padding-right: 20px;
+  padding: 0 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -32,18 +32,26 @@
 }
 
 .additional-product__text {
+  position: relative;
+  line-height: 0;
+  margin-bottom: 35px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    height: 2px;
+    background-color: #68b738;
+  }
+
   @media (min-width: 768px) {
-    position: relative;
-    display: flex;
+    margin-bottom: 0;
 
     &::after {
-      position: absolute;
-      content: "";
       top: 21px;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background-color: #68b738;
     }
   }
 }
@@ -51,12 +59,16 @@
 .additional-product__list {
   list-style: none;
   margin: 0;
-  padding: 80px 30px 70px 30px;
+  padding: 0 20px 35px;
+
+  @media (min-width: 768px) {
+    padding: 80px 30px 70px 30px;
+  }
 }
 
 .additional-product__prize-wrapepr {
   margin-right: 20px;
-  margin-top: 35px;
+  margin-left: 20px;
   background-image: url("/img/mobile/catalog/gift-cat-mobile.png");
   background-size: cover;
   background-position: center;
