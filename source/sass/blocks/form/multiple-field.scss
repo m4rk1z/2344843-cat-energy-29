@@ -12,6 +12,12 @@
   text-transform: uppercase;
   color: #444444;
 
+  @media (min-width: 768px) {
+    padding-top: 5px;
+    font-size: 20px;
+    line-height: normal;
+  }
+
   &--radio:hover {
     color: #222222;
   }
@@ -44,6 +50,12 @@
     opacity: 0.3;
     pointer-events: none;
   }
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
 }
 
 .multiple-field__input[type="radio"] {
@@ -63,10 +75,15 @@
   content: "";
   background-color: #68b738;
   border-radius: 50%;
+
+  @media (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .multiple-field__input[type="checkbox"]:checked {
-  background: url("/img/checkbox.svg");
+  background: url("/img/universal/checkbox.svg");
   background-position: center;
   background-repeat: no-repeat;
 }

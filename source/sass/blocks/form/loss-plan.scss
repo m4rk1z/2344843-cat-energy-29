@@ -3,6 +3,12 @@
   border: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    padding: 22px 26px 26px;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+  }
 }
 
 .loss-plan__list {

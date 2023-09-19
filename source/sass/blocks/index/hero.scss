@@ -1,6 +1,20 @@
+.hero {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .hero__container {
   min-height: 302px;
-  background-image: url("/img/cat-background.png");
+  background-image: url("/img/mobile/index/cat-background.png");
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    background-image: unset;
+    min-height: unset;
+  }
 }
 
 .hero__title {
@@ -12,6 +26,14 @@
   font-weight: 400;
   line-height: 36px;
   color: #ffffff;
+
+  @media (min-width: 768px) {
+    text-align: unset;
+    padding: 65px 0 0 120px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
 }
 
 .hero__text {
@@ -24,11 +46,24 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: 768px) {
+    padding: 40px 0 0 120px;
+    text-align: unset;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
 }
 
 .hero__img-container {
   position: relative;
   height: 138px;
+
+  @media (min-width: 768px) {
+    order: 1;
+    height: 526px;
+  }
 }
 
 .hero__image {

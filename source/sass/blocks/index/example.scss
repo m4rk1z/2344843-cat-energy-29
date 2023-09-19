@@ -1,7 +1,19 @@
 .example {
   padding: 25px 20px 40px 20px;
+  min-height: 594px;
   background-color: #eaeaea;
-  height: 593px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    height: unset;
+    background-color: #ffffff;
+  }
+}
+
+.example__container {
+  @media (min-width: 768px) {
+    padding: 45px 0 0 30px;
+  }
 }
 
 .example__caption {
@@ -10,17 +22,43 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
   margin: 0;
   margin-bottom: 20px;
   font-family: "Lato", sans-serif;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 55px;
+    font-size: 16px;
+    line-height: 24px;
+
+    & br {
+      display: initial;
+    }
+  }
 }
 
 .example__container-list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .example__list {
@@ -29,6 +67,14 @@
   grid-gap: 11%;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    grid-gap: 43px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 255px;
+  }
 }
 
 .example__item {
@@ -39,12 +85,16 @@
   padding: 14px 0 17px;
   border: 1px solid #cdcdcd;
   border-radius: 4px;
+
+  @media (min-width: 768px) {
+    padding: 23px 20px 25px;
+    max-width: 162px;
+  }
 }
 
 .example__title {
   display: block;
   position: absolute;
-  left: 22px;
   bottom: -15px;
   padding: 0 11px;
   width: min-content;
@@ -53,6 +103,15 @@
   line-height: 12px;
   text-align: center;
   background-color: #eaeaea;
+
+  @media (min-width: 768px) {
+    text-wrap: nowrap;
+    left: unset;
+    bottom: -4px;
+    margin: 10px 0 0;
+    font-size: 14px;
+    background-color: #ffffff;
+  }
 }
 
 .example__description {
@@ -60,6 +119,10 @@
   text-align: center;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .example__resault {
@@ -67,4 +130,34 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  & br {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    width: unset;
+    height: unset;
+    margin-top: 7px;
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: right;
+
+    & br {
+      display: initial;
+    }
+  }
+}
+
+.example__img-container {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    height: 462px;
+    box-sizing: border-box;
+    background-color: #eaeaea;
+  }
 }

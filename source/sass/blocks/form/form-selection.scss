@@ -1,13 +1,18 @@
-
-
 .form-selection__data-cat {
   margin: 0 20px 23px;
+
+  @media (min-width: 768px) {
+    margin: 0 70px 72px;
+  }
 }
 
 .form-selection__loss-plan {
   margin: 0;
-}
 
+  @media (min-width: 768px) {
+    margin: 0 70px 65px;
+  }
+}
 
 .form-selection__data-owner {
   margin: 0;
@@ -21,20 +26,35 @@
   margin: 0;
 }
 
-
 .form-selection__button-wrapper {
   display: flex;
   flex-direction: column;
   padding: 0 20px 32px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 70px 59px;
+  }
 }
 
 .form-selection__button {
   margin-bottom: 21px;
+
+  @media (min-width: 768px) {
+    min-width: 284px;
+    margin: 0;
+  }
 }
 
 .form-selection__note {
   font-size: 14px;
   font-family: "Lato", sans-serif;
   line-height: 16px;
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+    font-size: 16px;
+  }
 }
