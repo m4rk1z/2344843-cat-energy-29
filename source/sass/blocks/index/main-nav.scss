@@ -33,6 +33,11 @@
     background-color: transparent;
     border: none;
   }
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
+    justify-content: flex-end;
+  }
 }
 
 .main-nav__item {
@@ -55,19 +60,24 @@
   text-transform: uppercase;
   color: #000000;
 
+  &--active::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 2px;
+    content: "";
+    background-color: #68b738;
+  }
+
   @media (min-width: 768px) {
     position: relative;
     font-size: 18px;
     line-height: 24px;
 
-    &--active::after {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: -8px;
-      height: 2px;
-      content: "";
-      background-color: #68b738;
+    @media (min-width: 1440px) {
+      font-size: 20px;
+      line-height: normal;
     }
   }
 }

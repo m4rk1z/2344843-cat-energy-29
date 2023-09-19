@@ -1,6 +1,12 @@
 .main-logo {
   display: flex;
   align-items: center;
+
+  @media (min-width: 1440px) {
+    margin-right: 457px;
+    margin-left: 25px;
+    height: 59px;
+  }
 }
 
 .main-logo__image {

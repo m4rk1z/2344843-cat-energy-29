@@ -2,6 +2,10 @@
   @media (min-width: 768px) {
     padding: 0 30px 70px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 0 110px 76px;
+  }
 }
 
 .main-catalog__title {
@@ -15,5 +19,10 @@
     margin: 0 0 44px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 43px 110px 0;
+    margin-bottom: 84px;
   }
 }

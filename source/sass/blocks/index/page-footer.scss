@@ -11,6 +11,10 @@
     align-items: center;
     padding: 55px 30px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 65px 110px;
+  }
 }
 
 .page-footer__logo {
