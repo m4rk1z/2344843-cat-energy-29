@@ -4,19 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon/180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container">
         <a class="main-header__logo main-logo">
-          <img
-            class="main-logo__image"
-            src="./img/mobile/index/logo-mobile.svg"
-            width="33"
-            height="38"
-            alt="Логотип компании Кэт энерджи"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              width="70"
+              height="59"
+              srcset="img/pc/index/logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              width="60"
+              height="50"
+              srcset="img/tablet/index/logo-tablet.svg"
+            />
+            <img
+              class="main-logo__image"
+              src="img/mobile/index/logo-mobile.svg"
+              width="33"
+              height="38"
+              alt="Логотип компании Кэт энерджи"
+            />
+          </picture>
           <img
             class="main-logo__text"
             src="./img/universal/text-logo.svg"
@@ -35,7 +53,7 @@
       <nav class="main-header__nav main-nav">
         <ul class="main-nav__list main-nav__list--closed">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="/index.html"> главная </a>
+            <a class="main-nav__link" href="./index.html"> главная </a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--active" href="#">
@@ -43,7 +61,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="/form.html"> подбор программы </a>
+            <a class="main-nav__link" href="./form.html"> подбор программы </a>
           </li>
         </ul>
       </nav>
@@ -75,13 +93,31 @@
                 </table>
               </div>
               <div class="product-card__image-wrapper">
-                <img
-                  class="product-card__image"
-                  src="./img/mobile/catalog/chicken-small-mobile.png"
-                  alt="Маленькая упаковка корма Кэт энерджи с курицей"
-                  width="68"
-                  height="86"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    width="161"
+                    height="172"
+                    srcset="
+                      img/pc/catalog/chicken-small-desktop.png    1x,
+                      img/pc/catalog/chicken-small-desktop@2x.png 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    width="161"
+                    height="172"
+                    srcset="
+                      img/tablet/catalog/chicken-small-tablet.png    1x,
+                      img/tablet/catalog/chicken-small-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="product-card__image"
+                    src="img/mobile/catalog/chicken-small-mobile.png"
+                    alt="Маленькая упаковка корма Кэт энерджи с курицей"
+                    srcset="img/mobile/catalog/chicken-small-mobile@2x.png 2x"
+                    width="68"
+                    height="86"
+                /></picture>
               </div>
             </div>
             <a class="product-card__button button button--green" href="#"
@@ -110,13 +146,31 @@
                 </table>
               </div>
               <div class="product-card__image-wrapper">
-                <img
-                  class="product-card__image"
-                  src="./img/mobile/catalog/chicken-big-mobile.png"
-                  alt="Большая упаковка корма Кэт энерджи с курицей"
-                  width="84"
-                  height="100"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    width="172"
+                    height="196"
+                    srcset="
+                      img/pc/catalog/chicken-big-desktop.png    1x,
+                      img/pc/catalog/chicken-big-desktop@2x.png 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    width="168"
+                    height="206"
+                    srcset="
+                      img/tablet/catalog/chicken-big-tablet.png    1x,
+                      img/tablet/catalog/chicken-big-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="product-card__image product-card__image--desktop"
+                    src="img/mobile/catalog/chicken-big-mobile.png"
+                    alt="Большая упаковка корма Кэт энерджи с курицей"
+                    srcset="img/mobile/catalog/chicken-big-mobile@2x.png 2x"
+                    width="84"
+                    height="100"
+                /></picture>
               </div>
             </div>
             <a class="product-card__button button button--green" href="#"
@@ -145,13 +199,31 @@
                 </table>
               </div>
               <div class="product-card__image-wrapper">
-                <img
-                  class="product-card__image"
-                  src="./img/mobile/catalog/fish-small-mobile.png"
-                  alt="Маленькая упаковка корма Кэт энерджи с рыбой"
-                  width="68"
-                  height="78"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    width="163"
+                    height="174"
+                    srcset="
+                      img/pc/catalog/fish-small-desktop.png    1x,
+                      img/pc/catalog/fish-small-desktop@2x.png 2x
+                    " />
+                  <source
+                    media="(min-width: 768px)"
+                    width="163"
+                    height="174"
+                    srcset="
+                      img/tablet/catalog/fish-small-tablet.png    1x,
+                      img/tablet/catalog/fish-small-tablet@2x.png 2x
+                    " />
+                  <img
+                    class="product-card__image"
+                    src="img/mobile/catalog/fish-small-mobile.png"
+                    alt="Маленькая упаковка корма Кэт энерджи с рыбой"
+                    srcset="img/mobile/catalog/fish-small-mobile@2x.png 2x"
+                    width="68"
+                    height="78"
+                /></picture>
               </div>
             </div>
             <a class="product-card__button button button--green" href="#"
@@ -180,13 +252,34 @@
                 </table>
               </div>
               <div class="product-card__image-wrapper">
-                <img
-                  class="product-card__image"
-                  src="./img/mobile/catalog/fish-big-mobile.png"
-                  alt="Большая упаковка корма Кэт энерджи с рыбой"
-                  width="84"
-                  height="100"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    width="172"
+                    height="196"
+                    srcset="
+                      img/pc/catalog/fish-big-desktop.png    1x,
+                      img/pc/catalog/fish-big-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    width="168"
+                    height="200"
+                    srcset="
+                      img/tablet/catalog/fish-big-tablet.png    1x,
+                      img/tablet/catalog/fish-big-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="product-card__image product-card__image--desktop"
+                    src="img/mobile/catalog/fish-big-mobile.png"
+                    alt="Большая упаковка корма Кэт энерджи с рыбой"
+                    srcset="img/mobile/catalog/fish-big-mobile@2x.png 2x"
+                    width="84"
+                    height="100"
+                  />
+                </picture>
               </div>
             </div>
             <a class="product-card__button button button--green" href="#"
@@ -215,13 +308,34 @@
                 </table>
               </div>
               <div class="product-card__image-wrapper">
-                <img
-                  class="product-card__image"
-                  src="./img/mobile/catalog/buckwheat-small-mobile.png"
-                  alt="Маленькая упаковка корма Кэт энерджи с гречкой"
-                  width="68"
-                  height="78"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    width="161"
+                    height="171"
+                    srcset="
+                      img/pc/catalog/buckwheat-small-desktop.png    1x,
+                      img/pc/catalog/buckwheat-small-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    width="161"
+                    height="171"
+                    srcset="
+                      img/tablet/catalog/buckwheat-small-tablet.png    1x,
+                      img/tablet/catalog/buckwheat-small-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="product-card__image"
+                    src="img/mobile/catalog/buckwheat-small-mobile.png"
+                    alt="Маленькая упаковка корма Кэт энерджи с гречкой"
+                    srcset="img/mobile/catalog/buckwheat-small-mobile@2x.png 2x"
+                    width="68"
+                    height="78"
+                  />
+                </picture>
               </div>
             </div>
             <a class="product-card__button button button--green" href="#"
@@ -250,13 +364,33 @@
                 </table>
               </div>
               <div class="product-card__image-wrapper">
-                <img
-                  class="product-card__image"
-                  src="./img/mobile/catalog/buckwheat-big-mobile.png"
-                  alt="Большая упаковка корма Кэт энерджи с гречкой"
-                  width="84"
-                  height="100"
-                />
+                <picture>
+                  <source
+                    width="172"
+                    height="196"
+                    srcset="
+                      img/pc/catalog/buckwheat-big-desktop.png    1x,
+                      img/pc/catalog/buckwheat-big-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    width="168"
+                    height="200"
+                    srcset="
+                      img/mobile/catalog/buckwheat-big-tablet.png    1x,
+                      img/mobile/catalog/buckwheat-big-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="product-card__image product-card__image--desktop"
+                    src="img/mobile/catalog/buckwheat-big-mobile.png"
+                    alt="Большая упаковка корма Кэт энерджи с гречкой"
+                    srcset="img/mobile/catalog/buckwheat-big-mobile@2x.png 2x"
+                    width="84"
+                    height="100"
+                  />
+                </picture>
               </div>
             </div>
             <a class="product-card__button button button--green" href="#"
@@ -285,13 +419,35 @@
                 </table>
               </div>
               <div class="product-card__image-wrapper">
-                <img
-                  class="product-card__image"
-                  src="./img/mobile/catalog/rice-small-mobile.png"
-                  alt="Большая упаковка корма Кэт энерджи с рисом"
-                  width="68"
-                  height="78"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    width="163"
+                    height="174"
+                    srcset="
+                      img/pc/catalog/rice-small-desktop.png    1x,
+                      img/pc/catalog/rice-small-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    width="163"
+                    height="174"
+                    srcset="
+                      img/tablet/catalog/rice-small-tablet.png    1x,
+                      img/tablet/catalog/rice-small-tablet@2x.png 2x
+                    "
+                  />
+
+                  <img
+                    class="product-card__image"
+                    src="img/mobile/catalog/rice-small-mobile.png"
+                    alt="Большая упаковка корма Кэт энерджи с рисом"
+                    srcset="img/mobile/catalog/rice-small-mobile@2x.png 2x"
+                    width="68"
+                    height="78"
+                  />
+                </picture>
               </div>
             </div>
             <a class="product-card__button button button--green" href="#"
@@ -385,13 +541,31 @@
           </address>
         </div>
         <div class="contacts__map">
-          <img
-            class="contacts__map-img"
-            src="img/mobile/index/map-mobile.png"
-            width="320"
-            height="362"
-            alt="Карта где мы находимся"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              width="1440"
+              height="400"
+              srcset="
+                img/pc/index/map-desktop.png    1x,
+                img/pc/index/map-desktop@2x.png 2x
+              " />
+            <source
+              media="(min-width: 768px)"
+              width="768"
+              height="400"
+              srcset="
+                img/tablet/index/map-tablet.png 1x,
+                img/tablet/index/map@2x.png     2x
+              " />
+            <img
+              class="contacts__map-img"
+              src="img/mobile/index/map-mobile.png"
+              width="320"
+              height="362"
+              srcset="img/mobile/index/map-mobile@2x.png 2x"
+              alt="Карта где мы находимся"
+          /></picture>
         </div>
       </section>
     </main>

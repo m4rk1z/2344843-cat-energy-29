@@ -13,13 +13,21 @@
 
 .hero__container {
   min-height: 302px;
-  background-image: url("/img/mobile/index/cat-background.png");
+  background-color: #62a53b;
+  background-image: url("../img/mobile/index/cat-background.png");
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/index/cat-background@2x.png");
+  }
 
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     background-image: unset;
     min-height: unset;
+    background-color: unset;
   }
 }
 
@@ -91,9 +99,11 @@
   @media (min-width: 1440px) {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 331px;
+    left: 527px;
     width: 552px;
     height: 499px;
+    margin: auto 0;
   }
 }
 
@@ -101,4 +111,10 @@
   position: absolute;
   bottom: 2px;
   left: 19px;
+
+  @media (min-width: 768px) {
+    left: 30px;
+    right: 0;
+    margin: auto 0;
+  }
 }

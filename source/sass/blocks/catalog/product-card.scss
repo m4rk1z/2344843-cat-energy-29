@@ -142,6 +142,19 @@
   left: 0;
   right: 0;
   margin: auto;
+
+  @media (min-width: 768px) {
+    bottom: 42px;
+    left: -13px;
+  }
+
+  @media (min-width: 1440px) {
+    left: -9px;
+
+    &--desktop {
+      left: -16px;
+    }
+  }
 }
 
 .product-card__button {
