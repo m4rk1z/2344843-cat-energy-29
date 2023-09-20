@@ -4,6 +4,36 @@
   @media (min-width: 768px) {
     position: static;
   }
+
+  @media (min-width: 1440px) {
+    box-sizing: border-box;
+    padding: 71px 110px 0 133px;
+
+    &--bg {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 694px;
+        content: "";
+        background-color: #65a73c;
+        background-image: url("../img/pc/index/index-bg-desktopjpg.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+      }
+
+      & .main-nav__link {
+        color: #ffffff;
+
+        &::after {
+          background-color: #ffffff;
+        }
+      }
+    }
+  }
 }
 
 .main-nav__list {
@@ -28,6 +58,7 @@
   @media (min-width: 768px) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     gap: 33px;
     width: unset;
     background-color: transparent;
@@ -35,6 +66,8 @@
   }
 
   @media (min-width: 1440px) {
+    position: relative;
+    z-index: 1;
     margin-top: 0;
     justify-content: flex-end;
   }
