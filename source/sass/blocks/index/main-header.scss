@@ -37,6 +37,7 @@
 
 .main-header__logo {
   margin-right: auto;
+  height: 38px;
 
   @media (min-width: 768px) {
     height: 50px;
@@ -58,13 +59,13 @@
   &--active {
     width: 20px;
     height: 20px;
-    background: url("/img/toggle-active.svg");
+    background: url("../img/mobile/index/toggle-active.svg");
   }
 
   &--inactive {
     width: 24px;
     height: 24px;
-    background-image: url("/img/toggle-inactive.svg");
+    background-image: url("../img/mobile/index/toggle-inactive.svg");
   }
 
   @media (min-width: 768px) {
