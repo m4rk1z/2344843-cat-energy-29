@@ -1,0 +1,112 @@
+.compare-slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  width: 280px;
+  height: 100%;
+
+  @media (min-width: 768px) {
+    bottom: 101px;
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: 1440px) {
+    position: static;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.compare-slider__example-before {
+  height: 100%;
+  width: 50%;
+  background-image: url("../img/mobile/index/cat-before-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 280px 100%;
+  background-position: left;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/index/cat-before-mobile@2x.png");
+  }
+
+  @media (min-width: 768px) {
+    background-image: url("../img/universal/cat-before.png");
+    background-size: 560px 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/universal/cat-before@2x.png");
+    }
+  }
+}
+
+.compare-slider__example-after {
+  height: 100%;
+  width: 50%;
+  background-image: url("../img/mobile/index/cat-after-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 280px 100%;
+  background-position: right;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/index/cat-after-mobile@2x.png");
+  }
+
+  @media (min-width: 768px) {
+    background-size: 560px 100%;
+    background-image: url("../img/universal/cat-after.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/universal/cat-after@2x.png");
+    }
+  }
+}
+
+.compare-slider__button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin: auto;
+    width: 4px;
+    content: "";
+    border-radius: 2px;
+    background-color: #666666;
+  }
+
+  &:hover {
+    &::after {
+      background-color: #68b738;
+    }
+
+    & .compare-slider__button-image {
+      color: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+
+    &::after {
+      background-color: #5eaa2f;
+    }
+
+    & .compare-slider__button-image {
+      color: #5eaa2f;
+    }
+  }
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicon/180.png" />
@@ -13,7 +13,7 @@
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container">
-        <a class="main-header__logo main-logo">
+        <a class="main-header__logo main-logo" href="index.html">
           <picture>
             <source
               media="(min-width: 1440px)"
@@ -671,7 +671,7 @@
               <dt>1 упаковка (100 г)</dt>
               <dd>200 ₽</dd>
             </dl>
-            <button class="product_button button button--green">
+            <button class="product__button button button--green">
               заказать
             </button>
           </li>
@@ -681,7 +681,7 @@
               <dt>5 литров</dt>
               <dd>50 ₽</dd>
             </dl>
-            <button class="product_button button button--green">
+            <button class="product__button button button--green">
               заказать
             </button>
           </li>
@@ -691,7 +691,7 @@
               <dt>1 литр</dt>
               <dd>100 ₽</dd>
             </dl>
-            <button class="product_button button button--green">
+            <button class="product__button button button--green">
               заказать
             </button>
           </li>
@@ -701,12 +701,12 @@
               <dt>1 упаковка (30 г)</dt>
               <dd>300 ₽</dd>
             </dl>
-            <button class="product_button button button--green">
+            <button class="product__button button button--green">
               заказать
             </button>
           </li>
         </ul>
-        <div class="additional-product__prize-wrapepr">
+        <div class="additional-product__prize-wrapper">
           <p class="additional-product__prize-text">
             Закажите все<br />
             и получите чехол для кота в подарок!
@@ -783,7 +783,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <a class="page-footer__link"
+        <a class="page-footer__link" href="#"
           ><svg
           class="page-footer__img"
           width="128"
@@ -834,7 +834,7 @@
               aria-hidden="true"
               focusable="false"
             >
-              <use href="img/sprite.svg#telegram-icon"></use>
+              <use href="img/sprite.svg#telegram"></use>
             </svg></a>
           </li>
         </ul>
@@ -846,7 +846,7 @@
         >
           <span class="page-footer__developer">HTML Academy</span>
           <svg
-            class="developer__logo"
+            class="page-footer__developer-logo"
             width="27"
             height="34"
             fill="#666"

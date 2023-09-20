@@ -88,10 +88,11 @@
   }
 }
 
-.additional-product__prize-wrapepr {
+.additional-product__prize-wrapper {
   margin-right: 20px;
   margin-left: 20px;
   background-image: url("../img/mobile/catalog/gift-cat-mobile.png");
+  background-color: #7fc356;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -159,7 +160,7 @@
   width: 78px;
   height: 81px;
   content: "";
-  background-image: url("/img/universal/gift.svg");
+  background-image: url("../img/universal/gift.svg");
   background-repeat: no-repeat;
   background-position: center;
 

@@ -98,14 +98,12 @@
   text-transform: uppercase;
   color: #000000;
 
-  &--active::after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -8px;
-    height: 2px;
-    content: "";
-    background-color: #68b738;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: 768px) {
@@ -113,9 +111,19 @@
     font-size: 18px;
     line-height: 24px;
 
-    @media (min-width: 1440px) {
-      font-size: 20px;
-      line-height: normal;
+    &--active::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -8px;
+      height: 2px;
+      content: "";
+      background-color: #68b738;
     }
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: normal;
   }
 }

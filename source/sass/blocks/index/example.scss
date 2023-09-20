@@ -202,6 +202,7 @@
 }
 
 .example__img-container {
+  position: relative;
   display: none;
 
   @media (min-width: 768px) {
@@ -214,7 +215,7 @@
   @media (min-width: 1440px) {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 109px;
     width: 560px;
     height: 512px;
     background-color: transparent;
