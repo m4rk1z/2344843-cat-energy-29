@@ -91,10 +91,14 @@
 .additional-product__prize-wrapepr {
   margin-right: 20px;
   margin-left: 20px;
-  background-image: url("/img/mobile/catalog/gift-cat-mobile.png");
+  background-image: url("../img/mobile/catalog/gift-cat-mobile.png");
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile/catalog/gift-cat-mobile@2x.png");
+  }
 
   @media (min-width: 768px) {
     margin: 0;
@@ -102,17 +106,25 @@
     margin-left: 30px;
     margin-bottom: 75px;
     min-height: 200px;
-    background-image: url("/img/tablet/catalog/gift-cat.png");
+    background-image: url("../img/tablet/catalog/gift-cat-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet/catalog/gift-cat-tablet@2x.png");
+    }
   }
 
   @media (min-width: 1440px) {
     position: absolute;
     margin: 0;
-    background-image: url("/img/pc/catalog/gift-cat.png");
+    background-image: url("../img/pc/catalog/gift-cat-desktop.png");
     top: 116px;
     right: 109px;
     left: 1086px;
     bottom: 87px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/pc/catalog/gift-cat-desktop@2x.png");
+    }
   }
 }
 

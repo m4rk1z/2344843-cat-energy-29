@@ -4,19 +4,37 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicon/180.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__container main-header__container--not-divided">
         <a class="main-header__logo main-logo">
-          <img
-            class="main-logo__image"
-            src="./img/mobile/index/logo-mobile.svg"
-            width="33"
-            height="38"
-            alt="Логотип компании Кэт энерджи"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              width="70"
+              height="59"
+              srcset="img/pc/index/logo-desktop.svg"
+            />
+            <source
+              media="(min-width: 768px)"
+              width="60"
+              height="50"
+              srcset="img/tablet/index/logo-tablet.svg"
+            />
+            <img
+              class="main-logo__image"
+              src="img/mobile/index/logo-mobile.svg"
+              width="33"
+              height="38"
+              alt="Логотип компании Кэт энерджи"
+            />
+          </picture>
           <img
             class="main-logo__text"
             src="./img/universal/text-logo.svg"
@@ -40,12 +58,14 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="/catalog.html">
+            <a class="main-nav__link" href="./catalog.html">
               каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="/form.html"> подбор программы </a>
+            <a class="main-nav__link" href="./form.html">
+              подбор программы
+            </a>
           </li>
         </ul>
       </nav>
@@ -60,13 +80,34 @@
           <p class="hero__text">Занялся собой? Займись котом!</p>
         </div>
         <div class="hero__img-container">
-          <img
-            class="hero__image"
-            src="img/mobile/index/index-cat-mobile.png"
-            width="280"
-            height="270"
-            alt="Пример корма Кэт энерджи"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              width="552"
+              height="499"
+              srcset="
+                img/pc/index/index-cat-desktop.png    1x,
+                img/pc/index/index-cat-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              width="709"
+              height="609"
+              srcset="
+                img/tablet/index/index-cat-tablet.png    1x,
+                img/tablet/index/index-cat-tablet@2x.png 2x
+              "
+            />
+            <img
+              class="hero__image"
+              src="img/mobile/index/index-cat-mobile.png"
+              width="280"
+              height="270"
+              srcset="img/mobile/index/index-cat-mobile@2x.png 2x"
+              alt="Пример корма Кэт энерджи"
+            />
+          </picture>
         </div>
         <button class="hero__button button button--green">
           подобрать программу
@@ -163,13 +204,31 @@
           </address>
         </div>
         <div class="contacts__map">
-          <img
-            class="contacts__map-img"
-            src="img/mobile/index/map-mobile.png"
-            width="320"
-            height="362"
-            alt="Карта где мы находимся"
-          />
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              width="1440"
+              height="400"
+              srcset="
+                img/pc/index/map-desktop.png    1x,
+                img/pc/index/map-desktop@2x.png 2x
+              " />
+            <source
+              media="(min-width: 768px)"
+              width="768"
+              height="400"
+              srcset="
+                img/tablet/index/map-tablet.png 1x,
+                img/tablet/index/map@2x.png     2x
+              " />
+            <img
+              class="contacts__map-img"
+              src="img/mobile/index/map-mobile.png"
+              width="320"
+              height="362"
+              srcset="img/mobile/index/map-mobile@2x.png 2x"
+              alt="Карта где мы находимся"
+          /></picture>
         </div>
       </section>
     </main>
