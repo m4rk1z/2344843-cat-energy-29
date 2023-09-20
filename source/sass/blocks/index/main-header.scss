@@ -5,6 +5,12 @@
     justify-content: space-between;
     padding: 25px 33px 0;
   }
+
+  @media (min-width: 1440px) {
+    padding: 0 0 29px;
+    justify-content: unset;
+    align-items: unset;
+  }
 }
 
 .main-header__container {
@@ -22,6 +28,11 @@
     border-bottom: none;
     padding: 0;
   }
+
+
+  @media (min-width: 1440px) {
+    margin-right: auto;
+  }
 }
 
 .main-header__logo {
@@ -29,6 +40,13 @@
 
   @media (min-width: 768px) {
     height: 50px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 55px;
+    margin-right: 0;
+    margin-left: 110px;
+    height: 59px;
   }
 }
 
@@ -59,5 +77,10 @@
 
   @media (min-width: 768px) {
     min-width: unset;
+  }
+
+
+  @media (min-width: 1440px) {
+    width: 50%;
   }
 }

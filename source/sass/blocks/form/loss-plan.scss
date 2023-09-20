@@ -9,6 +9,13 @@
     border-left: 1px solid #d9d9d9;
     border-right: 1px solid #d9d9d9;
   }
+
+  @media (min-width: 1440px) {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 570px;
+    flex-grow: 1;
+  }
 }
 
 .loss-plan__list {

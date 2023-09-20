@@ -6,6 +6,10 @@
   @media (min-width: 768px) {
     padding-bottom: 16px;
   }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 48px;
+  }
 }
 
 .optional-select__container {
@@ -23,6 +27,12 @@
     row-gap: 21px;
     column-gap: 123px;
     padding: 23px 70px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(auto-fit, 221px);
+    column-gap: 104px;
+    padding: 22px 110px 0 110px;
   }
 }
 

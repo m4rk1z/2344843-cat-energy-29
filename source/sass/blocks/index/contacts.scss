@@ -1,3 +1,9 @@
+.contacts {
+  @media (min-width: 1440px) {
+    position: relative;
+  }
+}
+
 .contacts__wrapper {
   display: flex;
   justify-content: space-evenly;
@@ -11,6 +17,19 @@
   @media (min-width: 768px) {
     justify-content: space-between;
     padding: 60px 70px;
+  }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    padding-left: 80px;
+    padding-right: 78px;
+    width: 408px;
+    height: 78px;
+    left: 110px;
+    right: 765px;
+    top: 95px;
+    bottom: 0;
+    background-color: #ffffff;
   }
 }
 
@@ -47,6 +66,10 @@
 
     & .contacts__delimiter {
       display: initial;
+    }
+
+    @media (min-width: 1440px) {
+      text-align: start;
     }
   }
 }

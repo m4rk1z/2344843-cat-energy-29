@@ -3,6 +3,12 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    padding: 81px 331px 52px 190px;
+    min-height: 418px;
+  }
 }
 
 .hero__container {
@@ -34,6 +40,11 @@
     line-height: 60px;
     color: #000000;
   }
+
+  @media (min-width: 1440px) {
+    padding: 0 503px 0 0;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__text {
@@ -54,6 +65,18 @@
     line-height: 20px;
     color: #000000;
   }
+
+  @media (min-width: 1440px) {
+    padding: 0 636px 0 0;
+    margin-bottom: 52px;
+  }
+}
+
+.hero__button {
+  @media (min-width: 1440px) {
+    margin: 0;
+    width: 244px;
+  }
 }
 
 .hero__img-container {
@@ -64,6 +87,14 @@
     order: 1;
     height: 526px;
   }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 552px;
+    height: 499px;
+  }
 }
 
 .hero__image {
@@ -71,4 +102,3 @@
   bottom: 2px;
   left: 19px;
 }
-

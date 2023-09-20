@@ -7,6 +7,10 @@
   @media (min-width: 768px) {
     padding: 0;
   }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 87px;
+  }
 }
 
 .additional-product__title {
@@ -28,6 +32,11 @@
     font-size: 36px;
     line-height: 36px;
     z-index: 1;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 70px;
+    padding-bottom: 80px;
   }
 }
 
@@ -54,6 +63,12 @@
       top: 21px;
     }
   }
+
+  @media (min-width: 1440px) {
+    &::after {
+      top: 23px;
+    }
+  }
 }
 
 .additional-product__list {
@@ -63,6 +78,13 @@
 
   @media (min-width: 768px) {
     padding: 80px 30px 70px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    position: relative;
+    display: flex;
+    padding: 0 434px 0 111px;
+    flex-direction: column;
   }
 }
 
@@ -82,6 +104,16 @@
     min-height: 200px;
     background-image: url("/img/tablet/catalog/gift-cat.png");
   }
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    margin: 0;
+    background-image: url("/img/pc/catalog/gift-cat.png");
+    top: 116px;
+    right: 109px;
+    left: 1086px;
+    bottom: 87px;
+  }
 }
 
 .additional-product__prize-text {
@@ -98,6 +130,11 @@
   @media (min-width: 768px) {
     padding: 71px 48px 69px 344px;
     text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 185px 42px 43px;
+    text-align: center;
   }
 }
 
@@ -122,5 +159,11 @@
     margin: auto 0;
     width: 80px;
     height: 80px;
+  }
+
+  @media (min-width: 1440px) {
+    top: -92px;
+    bottom: 0;
+    left: 83px;
   }
 }

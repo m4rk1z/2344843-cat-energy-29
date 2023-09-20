@@ -14,6 +14,12 @@
     border-top: none;
     border-bottom: none;
   }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(auto-fill, 245px);
+    row-gap: 63px;
+    column-gap: 80px;
+  }
 }
 
 .product-cards__item {
