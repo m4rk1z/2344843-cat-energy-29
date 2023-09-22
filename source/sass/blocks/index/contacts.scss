@@ -25,6 +25,7 @@
     padding-right: 78px;
     width: 408px;
     height: 78px;
+    z-index: 1;
     left: 110px;
     right: 765px;
     top: 95px;
@@ -43,12 +44,13 @@
 
   @media (min-width: 768px) {
     max-width: 163px;
+    padding-top: 4px;
     font-size: 20px;
     line-height: 26px;
   }
 }
 
-.contacts__adress {
+.contacts__address {
   max-width: 140px;
   line-height: 20px;
   font-family: "Lato", sans-serif;
@@ -91,6 +93,21 @@
   object-position: center;
 
   @media (min-width: 768px) {
+    height: 400px;
+  }
+}
+
+.contacts__map-real {
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
     height: 400px;
   }
 }

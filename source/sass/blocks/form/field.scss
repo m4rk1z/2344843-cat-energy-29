@@ -38,7 +38,7 @@
     outline-offset: -2px;
   }
 
-  &:focus:invalid {
+  &--error:focus:invalid {
     outline: 2px solid #ff8282;
     outline-offset: -2px;
   }
