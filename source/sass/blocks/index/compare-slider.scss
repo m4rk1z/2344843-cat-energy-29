@@ -1,6 +1,7 @@
 .compare-slider {
   position: absolute;
   left: 0;
+  top: 15px;
   right: 0;
   margin: 0 auto;
   display: flex;
@@ -8,6 +9,7 @@
   height: 100%;
 
   @media (min-width: 768px) {
+    top: -152px;
     bottom: 101px;
     width: 560px;
     height: 512px;
@@ -15,6 +17,7 @@
 
   @media (min-width: 1440px) {
     position: static;
+    top: 0;
     height: 100%;
     width: 100%;
   }
